@@ -49,6 +49,7 @@ a:focus {
   text-decoration: none;
   color: #1d9b6c;
 }
+
 .light {
   font-weight: 400;
 }
@@ -231,6 +232,46 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+
+
+
+
+/*portfolio-item*/
+.portfolio-item{
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.caption:hover{
+  opacity: 1;
+}
+
+.caption{
+  padding:109.2px 160.5px;
+  transition: .5s ease;
+  opacity:0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.portfolio-link img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+
+
+
+
 #map {
   width: 100%;
   height: 200px;
