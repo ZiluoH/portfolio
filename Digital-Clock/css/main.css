@@ -1,0 +1,18 @@
+@font-face{
+	font-family: 'ATOMICCLOCKRADIO';
+	src:url('ATOMICCLOCKRADIO.ttf');
+}
+
+
+
+body{
+	background-color: yellow;
+}
+
+.digiclock{
+	font-size: 50px;
+	color: blue;
+	font-family: 'ATOMICCLOCKRADIO'
+
+}
+
