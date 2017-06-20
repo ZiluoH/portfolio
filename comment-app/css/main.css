@@ -1,0 +1,9 @@
+#commentlist{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#commentlist h1{
+	font-size: 20px;
+}
+
