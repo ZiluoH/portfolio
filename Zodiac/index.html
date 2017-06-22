@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>This is title</title>
+<title>Zodiac App</title>
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
     
     <script src="https://use.fontawesome.com/7c15bf4a68.js"></script>
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Custom css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
 </head>
 <body>
 
@@ -20,9 +22,10 @@
 
 <div class="row">
 
-<div class="col-md-8 col-offset-2">
-Tell me what's your zodiac<br><input id="zodiac"><br>
-<button type="button" onclick="zo()">Click to see your Zodiac!</button><br>
+<div class="col-md-6 col-md-offset-3">
+<h1>What's Your Sign?</h1>
+<input id="zodiac" placeholder=" enter your sigh here"><br>
+<button type="button" onclick="zo()" id="check" class="btn btn-primay btn-lg">Check</button><br>
 
 <img id="zodiac_img" src="">
 <p id="strength"></p>

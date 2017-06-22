@@ -81,13 +81,18 @@ var zodiac_group = [
 
 function zo(){
 	var zodiac = document.getElementById('zodiac').value
+        zodiac = zodiac.toLowerCase()
 	var wrongname = "Please type in correct Zodiac name."
+    var your_strength = "Your strength : "
+    var your_weakness = "Your weakness : " 
+    
+
 
 	 for (var i = 0; i < zodiac_group.length; i++) {
 	 	if (zodiac == zodiac_group[i].name) {
             document.getElementById('zodiac_img').src=zodiac_group[i].img
-	 		document.getElementById('strength').innerHTML = "Your strength is: " + zodiac_group[i].strength
-	 		document.getElementById('weakness').innerHTML = "Your weakness is: " + zodiac_group[i].weakness	 	
+	 		document.getElementById('strength').innerHTML = your_strength + zodiac_group[i].strength
+	 		document.getElementById('weakness').innerHTML = your_weakness + zodiac_group[i].weakness	 	
             return	
 	 	}
             document.getElementById('zodiac_img').src=""
@@ -97,3 +102,11 @@ function zo(){
 
 	 }
 		}
+
+
+
+document.getElementById('zodiac').onkeypress=function(enter){
+    if(enter.keyCode==13){
+        document.getElementById('check').click();
+    }
+}
