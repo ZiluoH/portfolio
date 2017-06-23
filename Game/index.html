@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>This is title</title>
+<title>Small or Big</title>
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
     
     <script src="https://use.fontawesome.com/7c15bf4a68.js"></script>
@@ -16,20 +16,29 @@
 </head>
 <body>
 
-<div class="radio">
-  <label><input type="radio" name="optradio" id="Large">Large</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio" id="Small">Small</label>
-</div>
+<div class="container">
+  <div>
+    <h1>Welcome to game Small or Big!</h1>
+  </div>
 
-Bet <input id="bet_amount"<br>
+<!--3 Dice IMG  -->
+  <div>
+    <img src="" id="dice1"><img src="" id="dice2"><img src="" id="dice3">
+  </div>
+<!-- <div class="radio"> -->
+  <label><input type="radio" name="optradio" id="Large">Large</label>
+<!-- </div> -->
+<!-- <div class="radio"> -->
+  <label><input type="radio" name="optradio" id="Small">Small</label>
+<!-- </div> -->
+
+Bet <input type="number" min="0" id="bet_amount"<br>
 
 
 <button type="button" onclick="play()">Play</button>
 
 
-
+</div>
 
   <!-- JS -->
   <script src="js/main.js"></script>
