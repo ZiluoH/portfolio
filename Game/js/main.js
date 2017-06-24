@@ -26,8 +26,9 @@ document.getElementById('dice2').src = dice_group[1].img
 document.getElementById('dice3').src = dice_group[2].img
 
 var yourValue = 0
-
+document.getElementById('yourValue').innerHTML = yourValue
 var win = 0
+
 
 function play(){
 
@@ -65,5 +66,6 @@ if (Large.checked && sum > 10)
     yourValue = yourValue + win
 	console.log("dice roll " + sum)
     console.log("Now you have " + yourValue)
+    document.getElementById('yourValue').innerHTML = yourValue
 
 }
