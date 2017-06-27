@@ -30,6 +30,16 @@ document.getElementById('yourValue').innerHTML = yourValue
 var win = 0
 
 
+function deposit(){
+	var depositValue = document.getElementById('deposit_amount').value
+	yourValue = yourValue + depositValue
+	
+	document.getElementById('yourValue').innerHTML = yourValue
+	console.log(yourValue)
+	console.log(depositValue)
+}
+
+
 function play(){
 
 var Large = document.getElementById('Large')
