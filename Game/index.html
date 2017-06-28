@@ -26,28 +26,21 @@
     <img src="" id="dice1"><img src="" id="dice2"><img src="" id="dice3">
   </div>
 <!-- <div class="radio"> -->
-
-
   <label><input type="radio" name="optradio" id="Large">Large</label>
 <!-- </div> -->
 <!-- <div class="radio"> -->
   <label><input type="radio" name="optradio" id="Small">Small</label>
 <!-- </div> -->
 
-<p>Bet</p> <input type="number" min="0" id="bet_amount"<br>
+Bet <input type="number" min="0" id="bet_amount">
 
 
-<button type="button" onclick="play()" class="btn btn-primary">Play</button>
+<button type="button" onclick="play()">Play</button><br>
 
-<br>
-<p>Your Balance: <span id="yourValue"></span></p>
+<input type="number" min="0" id="deposit_amount">
+<button type="button" onclick="deposit()">Deposit</button>
 
-<div class="deposit">
-  <input type="number" min="0" id="deposit_amount" placeholder="Insert Money">
-  <button type="button" onclick="deposit()" class="btn btn-primary">Deposit</button>
-  
-</div>
-
+<p>Balance: <span id="balance"></span></p>
 
 </div>
 

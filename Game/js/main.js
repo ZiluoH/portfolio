@@ -26,17 +26,13 @@ document.getElementById('dice2').src = dice_group[1].img
 document.getElementById('dice3').src = dice_group[2].img
 
 var yourValue = 0
-document.getElementById('yourValue').innerHTML = yourValue
 var win = 0
 
+function deposit() {
 
-function deposit(){
-	var depositValue = document.getElementById('deposit_amount').value
-	yourValue = yourValue + depositValue
-	
-	document.getElementById('yourValue').innerHTML = yourValue
-	console.log(yourValue)
-	console.log(depositValue)
+var deposit_amount = document.getElementById('deposit_amount').value
+yourValue = +yourValue + +deposit_amount
+document.getElementById('balance').innerHTML = yourValue
 }
 
 
@@ -76,6 +72,5 @@ if (Large.checked && sum > 10)
     yourValue = yourValue + win
 	console.log("dice roll " + sum)
     console.log("Now you have " + yourValue)
-    document.getElementById('yourValue').innerHTML = yourValue
-
+    document.getElementById('balance').innerHTML = yourValue
 }
