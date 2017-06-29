@@ -1,1 +1,28 @@
-*
+.container{
+	width: 60%;
+}
+
+
+.game_title{
+	display: inline-block;
+	width: 100%;
+	margin-top: 40px;
+}
+
+#deposit_amount{
+	margin: 13px 0 5px auto;
+	display: block;
+}
+.deposit_btn{
+	display: block;
+	margin: 5px 0 5px auto;
+}
+
+#dice1, #dice2, #dice3{
+	display: inherit;
+	margin: auto;
+}
+
+.smallbtn,.bigbtn{
+	font-size: 30px;
+}

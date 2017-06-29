@@ -17,28 +17,35 @@
 <body>
 
 <div class="container">
-  <div>
-    <h1>Welcome to game Small or Big!</h1>
+  <div class="game_title row">
+    <h1 class="col-md-9">Welcome to game Small or Big!</h1>
+    <div class="deposit_section col-md-3">
+      <input type="number" min="0" id="deposit_amount">
+      <button type="button" onclick="deposit()" class="deposit_btn">Deposit</button>
+    </div>
   </div>
 
 <!--3 Dice IMG  -->
-  <div>
-    <img src="" id="dice1"><img src="" id="dice2"><img src="" id="dice3">
+  <div class="row">
+    <img src="" id="dice1" class="col-md-4"><img src="" id="dice2" class="col-md-4"><img src="" id="dice3" class="col-md-4">
   </div>
-<!-- <div class="radio"> -->
-  <label><input type="radio" name="optradio" id="Large">Large</label>
-<!-- </div> -->
-<!-- <div class="radio"> -->
-  <label><input type="radio" name="optradio" id="Small">Small</label>
-<!-- </div> -->
 
+  <!-- Small or Big? -->
+  <div data-toggle="buttons" class="smallOrbig">
+  <label class="btn btn-primary smallbtn">
+    <input type="radio" name="options" id="Small">Small
+  </label>
+  
+  <label class="btn btn-danger bigbtn">
+    <input type="radio" name="options" id="Big">Big
+  </label>
+  </div>
 Bet <input type="number" min="0" id="bet_amount">
 
 
 <button type="button" onclick="play()">Play</button><br>
 
-<input type="number" min="0" id="deposit_amount">
-<button type="button" onclick="deposit()">Deposit</button>
+
 
 <p>Balance: <span id="balance"></span></p>
 

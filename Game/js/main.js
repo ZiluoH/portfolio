@@ -38,7 +38,7 @@ document.getElementById('balance').innerHTML = yourValue
 
 function play(){
 
-var Large = document.getElementById('Large')
+var Big = document.getElementById('Big')
 var Small = document.getElementById('Small')
 var bet_amount = document.getElementById('bet_amount').value
 
@@ -48,7 +48,7 @@ var dice_3 = Math.floor(Math.random()*6 + 1)
 
 var sum = dice_1 + dice_2 + dice_3
 
-if (Large.checked && sum > 10) 
+if (Big.checked && sum > 10) 
 	{
      win = +bet_amount
        
@@ -58,7 +58,7 @@ if (Large.checked && sum > 10)
 	  win = +bet_amount
 	  
 	} 
-	else if (Large.checked && sum < 10) 
+	else if (Big.checked && sum < 10) 
 	{
 	  win = -bet_amount	  
 	  
