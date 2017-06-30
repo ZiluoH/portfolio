@@ -27,19 +27,23 @@
 
 <!--3 Dice IMG  -->
   <div class="row">
-    <img src="" id="dice1" class="col-md-4"><img src="" id="dice2" class="col-md-4"><img src="" id="dice3" class="col-md-4">
+    <img src="" id="dice1" class="col-md-4">
+    <img src="" id="dice2" class="col-md-4">
+    <img src="" id="dice3" class="col-md-4">
   </div>
 
   <!-- Small or Big? -->
-  <div data-toggle="buttons" class="smallOrbig">
-  <label class="btn btn-primary smallbtn">
+  <div data-toggle="buttons" class="row smallOrbig">
+  <label class="btn btn-danger smallbtn col-md-2">
     <input type="radio" name="options" id="Small">Small
   </label>
   
-  <label class="btn btn-danger bigbtn">
+  <label class="btn btn-danger bigbtn col-md-2">
     <input type="radio" name="options" id="Big">Big
   </label>
   </div>
+
+  <div>
 Bet <input type="number" min="0" id="bet_amount">
 
 
@@ -48,6 +52,7 @@ Bet <input type="number" min="0" id="bet_amount">
 
 
 <p>Balance: <span id="balance"></span></p>
+</div>
 
 </div>
 
