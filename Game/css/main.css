@@ -1,5 +1,6 @@
 .container{
 	width: 60%;
+	background-color: yellow;
 }
 
 
@@ -23,6 +24,19 @@
 	margin: auto;
 }
 
-.smallbtn,.bigbtn{
-	font-size: 30px;
+.smallOrbig{
+	display: inline;
+}
+
+.smallbtn, .bigbtn{
+	font-size: 27px;
+	width: 35%;
+	margin-left: 10%;
+	min-width: 130px;
+	height: 52.4px;
+	margin-top: 15px;
+}
+
+.bigbtn{
+	margin-right: 10%;
 }
