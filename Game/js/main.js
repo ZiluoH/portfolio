@@ -27,6 +27,8 @@ document.getElementById('dice3').src = dice_group[2].img
 
 var yourValue = 0
 var win = 0
+var SorB = "Small"
+var WorL = "Win"
 
 function deposit() {
 
@@ -51,22 +53,26 @@ var sum = dice_1 + dice_2 + dice_3
 if (Big.checked && sum > 10) 
 	{
      win = +bet_amount
-       
+     SorB = "Big" 
+     WorL = "Win"
 	} 
 	else if (Small.checked && sum < 11) 
 	{
 	  win = +bet_amount
-	  
+	  SorB = "Small"
+	  WorL = "Win"
 	} 
 	else if (Big.checked && sum < 10) 
 	{
 	  win = -bet_amount	  
-	  
+	  SorB = "Small"
+	  WorL = "Lose"
 	} 
 	else if (Small.checked && sum > 10)
 	{
 	  win = -bet_amount
-	  
+	  SorB = "Big"
+	  WorL = "Lose"
 	}
     
     yourValue = yourValue + win
