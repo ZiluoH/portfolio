@@ -46,10 +46,12 @@
   </div>
 
   <div>
-Bet <input type="number" min="0" id="bet_amount">
+Bet <input type="number" min="0" id="bet_amount" pattern="[0-9]" placeholder="Place your bet">
 
 
 <button type="button" onclick="play()" class="">Play</button><br>
+
+<p>result: <span id="result"></span></p>
 
 
 

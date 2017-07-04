@@ -79,4 +79,7 @@ if (Big.checked && sum > 10)
 	console.log("dice roll " + sum)
     console.log("Now you have " + yourValue)
     document.getElementById('balance').innerHTML = yourValue
+    document.getElementById('result').innerHTML = "It rolls " + sum + ", you " + WorL + " " + bet_amount + "."
 }
+
+
