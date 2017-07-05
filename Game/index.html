@@ -22,10 +22,21 @@
   <div class="game_title row">
     <h1 class="col-md-9">Welcome to game Small or Big!</h1>
     <div class="deposit_section col-md-3">
-      <input type="number" min="0" id="deposit_amount">
+      <!-- <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="number" min="0" id="deposit_amount" class="form-control"  aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-addon">.00</span>
+      </div> -->
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="number" min="0" class="form-control" id="deposit_amount"  aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-addon">.00</span>
+      </div>
       <button type="button" onclick="deposit()" class="deposit_btn">Deposit</button>
     </div>
   </div>
+
+  
 
 <!--3 Dice IMG  -->
   <div class="row">
@@ -46,7 +57,7 @@
   </div>
 
   <div>
-Bet <input type="number" min="0" id="bet_amount" pattern="[0-9]" placeholder="Place your bet">
+Bet: <input type="number" min="0" id="bet_amount" pattern="[0-9]" placeholder="Place your bet">
 
 
 <button type="button" onclick="play()" class="">Play</button><br>
