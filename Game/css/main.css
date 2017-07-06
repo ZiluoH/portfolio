@@ -8,9 +8,13 @@
 	display: inline-block;
 	width: 100%;
 	margin-top: 40px;
+	margin-left: auto;
 }
 
-
+.deposit_section{
+	margin-top: 20px;
+	float: right;
+}
 
 .deposit_btn{
 	display: block;
@@ -35,6 +39,8 @@
 	margin-top: 15px;
 }
 
-.bigbtn{
-	margin-right: 10%;
+@media only screen and (max-width:591px){
+	.smallbtn, .bigbtn{
+		margin-left: 25%;
+	}
 }
