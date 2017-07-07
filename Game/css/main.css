@@ -21,6 +21,11 @@
 	margin: 5px 0 5px auto;
 }
 
+.diceimg{
+    margin: auto;
+}
+
+
 #dice1, #dice2, #dice3{
 	display: inherit;
 	margin: auto;
