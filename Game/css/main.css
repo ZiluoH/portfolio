@@ -60,6 +60,24 @@
 	margin-top: 15px;
 }
 
+.play_btn{
+	margin-top: 4px;
+}
+
+.result{
+	margin-top: 10px;
+}
+
+
+
+.balance{
+	margin-top: 10px;
+}
+
+
+
+
+
 @media only screen and (max-width:591px){
 	.smallbtn, .bigbtn{
 		margin-left: 25%;
