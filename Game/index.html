@@ -45,15 +45,15 @@
   <label class="btn btn-danger smallbtn col-md-2 col-xs-6">
     <input type="radio" name="options" id="Small" ng-model="betSmall">Small
   </label>
-  
+
   <label class="btn btn-danger bigbtn col-md-2 col-xs-6">
     <input type="radio" name="options" id="Big" ng-model="betBig">Big
   </label>
   </div>
 
-  
+<!-- Bet section -->
    <div class="row bet_section">
-    <div class="col-lg-3 col-md-5 col-sm-6">
+    <div class="col-lg-4 col-md-5 col-sm-6">
      <div class="input-group">
       <span class="input-group-addon">$</span>
       <input type="number" min="0"  onkeypress="return event.charCode >= 48" class="form-control" id="bet_amount" placeholder="Place your bet">
@@ -61,7 +61,7 @@
      </div>
     </div>
     <div class="col-xs-3 play_btn">
-      <button type="button" onclick="play()">Play</button><br>
+      <button type="button" onclick="play()" class="">Play</button><br>
     </div>
   </div>
 
@@ -70,6 +70,12 @@
 
 
 <p class="balance">Balance: <span id="balance"></span></p>
+
+<!-- test -->
+<!-- <div class="wrap">
+  <div class="sticker"></div>
+  <div class="msg">new!</div>
+</div> -->
 
 </div>
 

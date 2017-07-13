@@ -1,6 +1,10 @@
+body{
+	background-color: #4b3d3d;
+}
+
 .container{
 	width: 60%;
-	background-color: yellow;
+	background-color: hsl(194, 80%, 61%);
 }
 
 
@@ -22,7 +26,7 @@
 	margin: 5px 0 5px auto;
 	border: none;
 	border-radius: 3px;
-	background-color: #27ae60;
+	background-color: #1be1d1;
 	box-shadow: 0 3px #95a5a6;
 }
 
@@ -62,7 +66,16 @@
 
 .play_btn{
 	margin-top: 4px;
+	animation: spin 10s linear infinite;
+	animation-play-state: paused;
 }
+
+
+
+.play_btn:hover{
+	animation-play-state: running;
+}
+
 
 .result{
 	margin-top: 10px;
@@ -83,3 +96,38 @@
 		margin-left: 25%;
 	}
 }
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
+/*test*/
+/*.wrap {width:200px; margin:auto;  z-index:1;}
+
+.msg {
+  color: whitesmoke;
+  text-align:center;
+  font-family: 'Bree Serif', Courier, monospaced;
+  font-size:3.5em;
+  width:200px;
+  position:absolute;
+  margin:55px 0 0 2px;
+  pointer-events: none; 
+}
+
+.sticker {
+  width:200px;
+  height:200px;
+  position:absolute;
+  background: url(https://dl.dropbox.com/u/1143870/i/sticker.png) top center no-repeat; 
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+/*  animation-play-state: paused; 
+}
+*/
+/*.sticker:hover {
+   Toggle our animation play state to running when we are hovering over our sticker 
+  animation-play-state: running;
+}*/
+
+
