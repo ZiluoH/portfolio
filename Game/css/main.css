@@ -64,10 +64,19 @@ body{
 	margin-top: 15px;
 }
 
+.bet_input{
+	margin-top: 9px;
+}
+
+
 .play_btn{
 	margin-top: 4px;
 	animation: spin 10s linear infinite;
 	animation-play-state: paused;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -87,9 +96,9 @@ body{
 	margin-top: 10px;
 }
 
-
-
-
+button:focus{
+	outline: 0;
+}
 
 @media only screen and (max-width:591px){
 	.smallbtn, .bigbtn{
@@ -98,7 +107,7 @@ body{
 }
 
 @keyframes spin {
-  100% {transform: rotate(1turn); }
+  100% {transform: rotate(5turn); }
 }
 
 /*test*/
