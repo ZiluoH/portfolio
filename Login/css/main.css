@@ -1,0 +1,39 @@
+body{
+	background-color: #c1bdba;
+	font-family: 'Titillium Web';
+}
+
+a{
+	text-decoration: none;
+	color: #1ab188;
+	transition: 0.5s ease;
+}
+
+a:hover{
+	color: darken(#1ab188,5%);
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+
+.form{
+	background-color: #13232f;
+	padding: 40px;
+	max-width: 600px;
+	margin: 40px auto;
+	border-radius: 5px;
+	box-shadow: 0 4px 10px 4px;
+
+}
+
+.switch_group{
+	list-style:none;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+.tab a{
+	display: block;
+	padding: 15px;
+	
+}
