@@ -1,3 +1,20 @@
+$(document).ready(function() {
+  $('#signuptab').click(function(){
+    $('#signup').show();
+    $('#signuptab').addClass('active')
+    $('#login').hide();
+    $('#logintab').removeClass('active')
+  });
+  $('#logintab').click(function(){
+    $('#signup').hide();
+    $('#signuptab').removeClass('active')
+    $('#login').show();
+    $('#logintab').addClass('active')
+  })
+})
+
+
+
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
   var $this = $(this),
@@ -25,19 +42,4 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
       }
     }
 
-});
-
-$('.tab a').on('click', function (e) {
-  
-  e.preventDefault();
-  
-  $(this).parent().addClass('active');
-  $(this).parent().siblings().removeClass('active');
-  
-  target = $(this).attr('href');
-
-  $('.tab-content > div').not(target).hide();
-  
-  $(target).fadeIn(600);
-  
 });

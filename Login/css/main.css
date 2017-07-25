@@ -23,34 +23,35 @@ h1{
 	margin:0 0 40px;
 }
 
-label{
-	position: absolute;
-	transform:translateY(6px);
-	/*left: 15px;*/
-	color: rgba(255, 255, 255, 0.5);
-	transition: all 0.25s ease;
-	-webkit-backface-visibility:hidden;
-	pointer-events: none;
-	font-size: 22px;
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .require {
+  margin: 2px;
+  color: #1ab188;
 }
 
-label .require{
-	margin:2px;
-	color: #1ab188;
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .require {
+  opacity: 0;
 }
 
-label .active{
-	transform: translateY(50px);
-	left: 2px;
-	font-size: 14px;
-}
-
-label .active .require{
-	opacity: 0;
-}
-
-label .highlight{
-	color: #ffffff;
+label.highlight {
+  color: #ffffff;
 }
 
 input{
@@ -115,7 +116,7 @@ textarea{
 	color: #ffffff;
 }
 
-.tab .active a{
+.active a{
 	background:#1ab188;
 	color: #ffffff;
 }
@@ -145,4 +146,29 @@ textarea{
 .lname{
 	display: inline-block;
 	width: 48%;
+}
+
+.button{
+	border:0;
+	outline: none;
+	border-radius: 0;
+	padding: 15px 0;
+	font-size: 26px;
+	font-weight: bold;
+	letter-spacing:3px;
+	background: #1ab188;
+	color: #ffffff;
+	transition:all.5s ease;
+	-webkit-appearance:none;
+	width: 100%;
+}
+
+.button:hover{
+	background: #01986F;
+}
+
+.forgotPW{
+	margin-top: -40px;
+	margin-bottom: 30px;
+	text-align: right;
 }
