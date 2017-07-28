@@ -78,13 +78,40 @@ function login() {
   var pw = document.getElementById('loginPW').value
 
   for (var i = 0; i < userlist.length; i++) {
-    if (userEmail == userlist[i].email && pw == userlist[i].pw) 
+    if ( (userEmail == userlist[i].email) && (pw == userlist[i].pw)) 
     {
       console.log("login")
       break
     }
     else{
       console.log("fail")
+      break
     }
   }
+}
+
+function signup() {
+  var newfname = document.getElementById('newfname').value
+  var newlname = document.getElementById('newlname').value
+  var newemail = document.getElementById('newemail').value
+  var newpw = document.getElementById('newpw').value
+  var newuser = {
+      fname:newfname,
+      lname:newlname,
+      email:newemail,
+      pw:newpw
+                }
+
+  for (var i = 0; i < userlist.length; i++) {
+    if (newemail == userlist[i].email) {
+      console.log('sameemail')
+      break
+    } else if (newpw.length < 6){
+      alert('your pw is too short, must be longer than 6 characters')
+      break
+    } 
+      userlist.push(newuser)
+    
+  }
+
 }

@@ -32,26 +32,26 @@
         <div class="top_row">
           <div class="field_wrap fname">
             <label>First Name<span class="require">*</span></label>
-            <input type="text" required autocomplete="off" />
+            <input type="text" required id="newfname">
           </div>
 
           <div class="field_wrap lname">
             <label>Last Name<span class="require">*</span></label>
-            <input type="text" required autocomplete="off">
+            <input type="text" required id="newlname">
           </div> 
         </div>
           
           <div class="field_wrap">
             <label>Email Address<span class="require">*</span></label>
-            <input type="email" required>
+            <input type="email" required id="newemail">
           </div>
 
           <div class="field_wrap">
             <label>Set A Password<span class="require">*</span></label>
-            <input type="text" required>
+            <input type="text" required id="newpw">
           </div>
 
-          <button type="button" class="button button-block">Get Started</button>
+          <button type="button" class="button button-block" onclick="signup()">Get Started</button>
 
 
         </form>        
