@@ -43,3 +43,48 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     }
 
 });
+
+
+var userlist = [
+  {
+    fname:"Michael",
+    lname:"Jordan",
+    email:"jordan@gmail.com",
+    pw:"jordan"
+  },
+  {
+    fname:"FirstName",
+    lname:"LastName",
+    email:"test@gmail.com",
+    pw:"test"
+  },
+  {
+    fname:"1",
+    lname:"1",
+    email:"1@gmail.com",
+    pw:"1"
+  }
+  // {
+  //   fname:"",
+  //   lname:"",
+  //   email:"",
+  //   pw:""
+  // }
+]
+
+
+function login() {
+  var userEmail = document.getElementById('loginEmail').value
+  var pw = document.getElementById('loginPW').value
+
+  for (var i = 0; i < userlist.length; i++) {
+    if (userEmail == userlist[i].email && pw == userlist[i].pw) 
+    {
+      console.log("login")
+      break
+    }
+    else{
+      console.log("fail")
+    }
+  }
+}
