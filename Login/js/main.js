@@ -1,3 +1,4 @@
+// function that sitch between sign up and login
 $(document).ready(function() {
   $('#signuptab').click(function(){
     $('#signup').show();
@@ -76,18 +77,14 @@ var userlist = [
 function login() {
   var userEmail = document.getElementById('loginEmail').value
   var pw = document.getElementById('loginPW').value
-
-  for (var i = 0; i < userlist.length; i++) {
-    if ( (userEmail == userlist[i].email) && (pw == userlist[i].pw)) 
+  for (var i = 0; i < userlist.length; i++) {    
+    if (userEmail == userlist[i].email && pw == userlist[i].pw) 
     {
-      console.log("login")
-      break
-    }
-    else{
-      console.log("fail")
-      break
+      alert("ok")
+      return
     }
   }
+  alert("fail")  
 }
 
 function signup() {
@@ -104,14 +101,12 @@ function signup() {
 
   for (var i = 0; i < userlist.length; i++) {
     if (newemail == userlist[i].email) {
-      console.log('sameemail')
-      break
+      alert('sameemail')
+      return
     } else if (newpw.length < 6){
       alert('your pw is too short, must be longer than 6 characters')
-      break
-    } 
-      userlist.push(newuser)
-    
+      return
+    }    
   }
-
+  userlist.push(newuser)
 }
