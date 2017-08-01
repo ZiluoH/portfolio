@@ -80,7 +80,7 @@ function login() {
   for (var i = 0; i < userlist.length; i++) {    
     if (userEmail == userlist[i].email && pw == userlist[i].pw) 
     {
-      alert("ok")
+      alert("You have successfully logged in")
       return
     }
   }
