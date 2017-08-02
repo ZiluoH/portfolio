@@ -84,7 +84,7 @@ function login() {
       return
     }
   }
-  alert("fail")  
+  alert("Please enter correct user Email and password")  
 }
 
 function signup() {
