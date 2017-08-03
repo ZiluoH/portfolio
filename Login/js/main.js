@@ -101,10 +101,10 @@ function signup() {
 
   for (var i = 0; i < userlist.length; i++) {
     if (newemail == userlist[i].email) {
-      alert('sameemail')
+      alert('This Email address is registered already, please use another Email address')
       return
     } else if (newpw.length < 6){
-      alert('your pw is too short, must be longer than 6 characters')
+      alert('Your pw is too short, must be longer than 6 characters')
       return
     }    
   }
