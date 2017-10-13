@@ -38,6 +38,8 @@ document.getElementById('balance').innerHTML = yourValue
 }
 
 
+
+
 function play(){
 
 var Big = document.getElementById('Big')
@@ -74,12 +76,14 @@ if (Big.checked && sum > 10)
 	  SorB = "Big"
 	  WorL = "Lose"
 	}
-    
+
+
     yourValue = yourValue + win
 	console.log("dice roll " + sum)
     console.log("Now you have " + yourValue)
     document.getElementById('balance').innerHTML = yourValue
     document.getElementById('result').innerHTML = "It rolls " + sum + ", " + SorB + ". You " + WorL + " " + bet_amount + "."
+    
 }
 
 
