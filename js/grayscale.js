@@ -183,3 +183,10 @@ function init() {
         icon: image
     });
 }
+
+
+$(document).ready(function(){
+    $('.caption').hover(function(){
+        $(this).toggleClass('animated fadeIn')
+    })
+})
